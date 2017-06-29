@@ -1,20 +1,7 @@
 @import "compass/css3";
-@import "bootstrap.min.css";
-@font-face
-{
-	font-family:Merriweatherimport;
-	src: url("Merriweather.ttf");
-}
-@font-face 
-{
-	font-family:cinzel decorative;
-	src: url("Cinzel.ttf");
-}
-@font-face
-{
-	font-family:roboto;
-	src: url("roboto.ttf");
-}
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700,900');
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
 $red: #e74c3c;
 
 *, 
@@ -24,6 +11,10 @@ $red: #e74c3c;
   
 }
 body{
+  width:100%;
+  margin:auto;
+  min-width:600px;
+  max-width:2000px;
   font: 20px Heltavica, sans-serif;
 }
 .navbar.shrink{
@@ -33,7 +24,7 @@ body{
 }
 
 .navbar{
-	font-family:'cinzel decorative';
+  font-family: 'cinzel decorative';
   padding-top: 15px;
   padding-bottom: 15px;
   border: 0;
@@ -43,11 +34,13 @@ body{
   letter-spacing: 3px;
   background-color:#e5e5e5;
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   transition: all 0.4s ease;
 }
 
 
 .navbar-2 {
-	font-family:'cinzel decorative';
+  font-family: 'cinzel decorative';
+  font-size: 17px;
   padding-top: 20px;
   padding-bottom:20px;
   border: 0;
@@ -68,31 +61,32 @@ body{
 
 
 .navbar-nav li a:hover {
-  color: #e25822 !important;
-  transition:color 0.2s;
+  color:#e25822 !important;
+  transition:all 0.2s;
   transition-timing-function: linear;
 }
 
 .navbar.navbar-default.navbar-fixed-top li a {
   color:#437ca8;
-  transition:color 0.2s;
+  transition:all 0.2s;
   transition-timing-function: ease-in-out;
 }
 
 .navbar-default .navbar-brand {
-	font-size:23px;
+  font-size:23px;
+  font-family: 'cinzel decorative';
   color: #437ca8;
-  transition:color 0.2s;
+  transition:all 0.2s;
   transition-timing-function: ease-in-out;
 }
 
 .navbar-default .navbar-brand:hover {
-  color: #e25822 !important;
+  color:#e25822 !important;
 }
 
 
 .margin1 {
-  margin-top: 150px; 
+  margin-top: 125px; 
 }
 .margin {
   margin-top: 40px;
@@ -100,11 +94,12 @@ body{
 
 
 .bcc-1 {
-  background-color:#437ca8;
+  background: #437ca8;
   color:#fff;
   font-family:roboto, sans-serif;
   font-family1:the girl next door, crusive;
 }
+
 .imgcl {
   width:350px;
   height:350px;
@@ -119,8 +114,8 @@ body{
   transition-timing-function: ease-in-out;
 }
 
-.devks {
-	font-family:'cinzel decorative';
+.devks{
+  font-family: 'cinzel decorative', regular;
 }
 
 .imgcl1 {
@@ -141,12 +136,6 @@ body{
              inset 0px -22px 16px -20px rgba(0, 0, 0, 0.2) ;
 
 }
-
-.tribute{
-	width:512px;
-	height:352px;
-}
-
 .navbar-header.navbar-brand.navbar-nav a {
   color:red;
 
@@ -179,15 +168,15 @@ body{
   color:#4c6862;
 }
 .margin-2 {
-  margin-bottom: 59px;
-  margin-top: 59px;
+  margin-bottom: 38px;
+  margin-top: 37px;
 }
 .margin-3 {
   margin-top:30px;
   margin-bottom:-12px;
 }
 .margin-4 {
-  margin-bottom:20px;
+  margin-bottom:30px;
 }
 
 
@@ -203,36 +192,34 @@ form {
   text-align:center;
   margin: 20px auto;
 }
-#input-submit ,#input-email ,#input-name ,#input-subject , #input-message :hover{
-	box-shadow:0px 0px 5px 2.5px rgba(0,0,0,0.3);
-	transition:box-shadow 0.3s;
-    transition-timing-function: ease-in-out;
-}
-#input-submit ,#input-email ,#input-name ,#input-subject , #input-message {
-	box-shadow:0px 0px 5px 2.5px rgba(0,0,0,0.3);
-	transition:box-shadow 0.3s;
-    transition-timing-function: ease-in-out;
-}
   input, textarea {
     border:0; outline:0;
     padding: 1em;
-    border-radius:10px;
+    @include border-radius(10px);
     display: block;
     width: 100%;
     margin-top: 1em;
-    font-family: Merriweatherimport;
+    font-family: 'Merriweather', sans-serif;
+    @include box-shadow(0 1px 1px rgba(black, 0.1));
     resize: none;
     transition:box-shadow 0.3s;
     transition-timing-function: ease-in-out;
-  }
-  
+
+    &:focus {
+      @include box-shadow(0 0px 10px rgba($red, 1)!important);
+    }
   
   #input-submit {
-    color: $red; 
-    background: $red;
+    color: white; 
+    background: #437ca8;
     cursor: pointer;
 }
-    
+    &:hover {
+      @include box-shadow(0px 0px 5px 2.5px rgba(0,0,0,0.3));
+      transition:box-shadow 0.3s;
+      transition-timing-function: ease-in-out;
+    }
+    }
   textarea {
     height: 237px;
     
@@ -252,6 +239,14 @@ form {
    margin-right: 2%; 
 }
 
+@media (max-width: 480px) {
+  .half {
+   width: 100%; 
+   float: none;
+   margin-bottom: 0;
+  }
+    }
+
 
 
 
@@ -263,14 +258,16 @@ h2 {
   font-family:roboto, sans-serif
 }
 .submitc {
-  background-color:#e74c3c;
-  color:#fff;
+  background-color:$red;
+  color:#fff
 }
 .li-relative {
   position:relative;
   right:10px;
   top:9px;
 }
+
+
 
 //LOGOS
 
