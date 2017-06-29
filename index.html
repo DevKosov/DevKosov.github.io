@@ -1,3 +1,18 @@
+<html lang="en">
+<head>
+<title> Kindergarten | Welcome </title>
+<link rel="stylesheet" href="new 1.css">
+<title>Bootstrap Example</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="bootstrap.min.js">
+<link rel="stylesheet" href="">
+<script src="Jquery.js"></script>
+<script src="bootstrap.min.js"></script>
+</head>
+
+
+<body>
 <!-- My nav -->
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
@@ -11,35 +26,45 @@
     </ul>
   </div>
 </nav>
-<!-- End of nav-->
+<!-- End -->
 
-    <div class="container-fluid bcc-1 text-center">
+
+    <div class="container-fluid bcc-1 text-center bgi">
   <h2 class="margin1" id="home">MY PERSONAL PORTFOILO</h2>
-  <img src="http://res.cloudinary.com/devkosov/image/upload/v1497872757/4941642-eminem-hd-wallpapers_xur0s3.jpg" alt="Eminem" style="display:inline" class="img-responsive imgcl img-circle margin box-shad">
+  </td.>
+  <img src="photos/eminem.png" alt="Eminem" style="display:inline" class="img-responsive imgcl img-circle margin box-shad">
       <h2 class="margin-2 devks"><em>Dev Kosov</em></h2>
 </div>
+
+
+
   <div class="container-fluid bcc-2 text-center">
   <h2 class="blclass" id="about">MY BIO</h2>
   <p class="blclass">I am 16 years old, I come from Kosovo now i live in France.<br>I am in High School now and in the future i want to study Computer Science.<br>I am passionate about programming since i was like a little kid.<br>I started <a href="https://www.freecodecamp.com/" target="_blank">FreeCodeCamp</a> on May and now I can make a Website.<br>My hobbies are Football and Basketball.</p>
 </div>
+
+
+
+
 <div class="container-fluid bcc-3 text-center">
   <div class="row">
     <h2 class="h2-c">My Recent Activities</h2>
   <div class="col-lg-4">
-    <h3>Started learing Html in <a href="https://www.freecodecamp.com/" target="_blank">FreeCodeCamp</a></h3>
-    <img src="http://res.cloudinary.com/devkosov/image/upload/v1497873139/blog-html-5_x5lukn.png" alt="html" class="imgcl">
+    <h3>My Tribute page :</h3>
+    <a href="https://s.codepen.io/DevKosov/debug/NjMRge/dXkqBbqeOxoM" target="_blank"><img src="photos/tribute1.png" alt="html" class="imgcl tribute"></a>
          </div>
   <div class="col-lg-4">
     <h3>Started learning Bootstrap in <a href="https://www.w3schools.com/bootstrap/default.asp" target="_blank">W3schools</a></h3>
-    <img src="http://res.cloudinary.com/devkosov/image/upload/v1497873272/logo_fxavjn.png" alt="bootstrap" class="imgcl">
+    <img src="photos/bootstrap.png" alt="bootstrap" class="imgcl">
 </div>
   <div class="col-lg-4">
     <h3>Also Just started Javascript in <a href="https://www.freecodecamp.com/" target="_blank">FreeCodeCamp</a></h3>
-    <img src="http://res.cloudinary.com/devkosov/image/upload/v1497873370/js_xyfuyt.png" class="imgcl1" alt="JavaScript">
+    <img src="photos/js.png" class="imgcl1" alt="JavaScript">
   </div>
     </div>
   </div>
 
+  
 
 <!-- Contact Me -->
 
@@ -66,7 +91,55 @@
     </div>
     <ul class="nav navbar-nav navbar-right navbar-collapse navbar-header">
       <li class="text-center li-relative">Follow me on </li>
-      <a href="https://github.com/DevKosov" target="_blank"><img src="http://res.cloudinary.com/devkosov/image/upload/v1497873503/25231_jmjrh4.png" class="mini-img margin-r" id="mini-img"></a>
+      <a href="https://github.com/DevKosov" target="_blank"><img src="photos/github.png" class="mini-img margin-r" id="mini-img"></a>
     </ul>
   </div>
 </nav>
+</body>
+<script>
+$('a[href^="#home"]').on('click', function(event) {
+
+    var target = $(this.getAttribute('href'));
+
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top -160
+        }, 1000);
+    }
+
+});
+$('a[href^="#about"]').on('click', function(event) {
+
+    var target = $(this.getAttribute('href'));
+	
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top -100
+        }, 1000);
+    }
+
+});
+$('a[href^="#contact"]').on('click', function(event) {
+
+    var target = $(this.getAttribute('href'));
+
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top -100
+        }, 1000); 
+    }
+
+});
+
+$(window).scroll(function() {
+  if ($(document).scrollTop() > 50) {
+    $('.navbar').addClass('shrink');
+  } else {
+    $('.navbar').removeClass('shrink');
+  }
+});
+</script>
+</html>
