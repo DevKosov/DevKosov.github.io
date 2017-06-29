@@ -209,7 +209,7 @@ form {
     display: block;
     width: 100%;
     margin-top: 1em;
-    font-family: Merriweatherimport;
+    font-family: Merriweather;
     resize: none;
     transition:box-shadow 0.3s;
     transition-timing-function: ease-in-out;
