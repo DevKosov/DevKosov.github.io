@@ -2,11 +2,10 @@
 <head>
 <title> Dev Kosov's Portfoilo </title>
 <link rel="stylesheet" href="new 1.css">
-<title>Bootstrap Example</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
-<link rel="stylesheet" href="">
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
@@ -29,7 +28,7 @@
 <!-- End of nav-->
 
     <div class="container-fluid bcc-1 text-center">
-  <h2 class="margin1" id="home">MY PERSONAL PORTFOILO</h2>
+  <h2 class="margin1 padding1" id="home">MY PERSONAL PORTFOILO</h2>
   <img src="http://res.cloudinary.com/devkosov/image/upload/v1497872757/4941642-eminem-hd-wallpapers_xur0s3.jpg" alt="Eminem" style="display:inline" class="img-responsive imgcl img-circle margin box-shad">
       <h2 class="margin-2 devks"><em>Dev Kosov</em></h2>
 </div>
@@ -95,7 +94,7 @@ $('a[href^="#home"]').on('click', function(event) {
         event.preventDefault();
         $('html, body').stop().animate({
             scrollTop: target.offset().top -160
-        }, 1000);
+        }, 700);
     }
 
 });
@@ -107,7 +106,7 @@ $('a[href^="#about"]').on('click', function(event) {
         event.preventDefault();
         $('html, body').stop().animate({
             scrollTop: target.offset().top -100
-        }, 1000);
+        }, 700);
     }
 
 });
@@ -119,17 +118,23 @@ $('a[href^="#contact"]').on('click', function(event) {
         event.preventDefault();
         $('html, body').stop().animate({
             scrollTop: target.offset().top -100
-        }, 1000); 
+        }, 700); 
     }
 
 });
 
 $(window).scroll(function() {
-  if ($(document).scrollTop() > 50) {
+  if ($(document).scrollTop() > 5) {
     $('.navbar').addClass('shrink');
   } else {
     $('.navbar').removeClass('shrink');
   }
+});
+
+$(document).ready(function(){
+   $('#input-message, label[for="input-message"]').focus(function(){$(this).addClass('.hover');},
+                                         function(){$(this).removeClass('.hover');});
+
 });
 </script>
 </html>
