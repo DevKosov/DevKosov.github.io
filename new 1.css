@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300');
 $red: #e74c3c;
 
+
 *, 
 *:before, 
 *:after {
@@ -12,10 +13,6 @@ $red: #e74c3c;
   
 }
 body{
-  width:100%;
-  margin:auto;
-  min-width:600px;
-  max-width:2000px;
   font: 20px Heltavica, sans-serif;
 }
 .navbar.shrink{
@@ -25,7 +22,7 @@ body{
 }
 
 .navbar{
-  font-family: 'cinzel decorative';
+	font-family:'cinzel decorative';
   padding-top: 15px;
   padding-bottom: 15px;
   border: 0;
@@ -35,13 +32,11 @@ body{
   letter-spacing: 3px;
   background-color:#e5e5e5;
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-   transition: all 0.4s ease;
 }
 
 
 .navbar-2 {
-  font-family: 'cinzel decorative';
-  font-size: 17px;
+	font-family:'cinzel decorative';
   padding-top: 20px;
   padding-bottom:20px;
   border: 0;
@@ -62,32 +57,31 @@ body{
 
 
 .navbar-nav li a:hover {
-  color:#e25822 !important;
-  transition:all 0.2s;
+  color: #e25822 !important;
+  transition:color 0.2s;
   transition-timing-function: linear;
 }
 
 .navbar.navbar-default.navbar-fixed-top li a {
   color:#437ca8;
-  transition:all 0.2s;
+  transition:color 0.2s;
   transition-timing-function: ease-in-out;
 }
 
 .navbar-default .navbar-brand {
-  font-size:23px;
-  font-family: 'cinzel decorative';
+	font-size:23px;
   color: #437ca8;
-  transition:all 0.2s;
+  transition:color 0.2s;
   transition-timing-function: ease-in-out;
 }
 
 .navbar-default .navbar-brand:hover {
-  color:#e25822 !important;
+  color: #e25822 !important;
 }
 
 
 .margin1 {
-  margin-top: 125px; 
+  margin-top: 150px; 
 }
 .margin {
   margin-top: 40px;
@@ -95,12 +89,11 @@ body{
 
 
 .bcc-1 {
-  background: #437ca8;
+  background-color:#437ca8;
   color:#fff;
   font-family:roboto, sans-serif;
   font-family1:the girl next door, crusive;
 }
-
 .imgcl {
   width:350px;
   height:350px;
@@ -115,8 +108,8 @@ body{
   transition-timing-function: ease-in-out;
 }
 
-.devks{
-  font-family: 'cinzel decorative', regular;
+.devks {
+	font-family:'cinzel decorative';
 }
 
 .imgcl1 {
@@ -137,6 +130,12 @@ body{
              inset 0px -22px 16px -20px rgba(0, 0, 0, 0.2) ;
 
 }
+
+.tribute{
+	width:512px;
+	height:352px;
+}
+
 .navbar-header.navbar-brand.navbar-nav a {
   color:red;
 
