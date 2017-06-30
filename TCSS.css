@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
+
+.navbar{
+  font-family: 'cinzel decorative';
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0;
+  font-size: 17px;
+  letter-spacing: 3px;
+  background-color:#e5e5e5;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   transition: all 0.4s ease;
+}
+.navbar.shrink{
+  padding-top:5px;
+  padding-bottom:5px;
+  transition: all 0.4s ease;
+}
+.navbar-nav li a:hover {
+  color:#e25822 !important;
+  transition:all 0.2s;
+  transition-timing-function: linear;
+}
+.navbar.navbar-default.navbar-fixed-top li a {
+  color:#437ca8;
+  transition:all 0.2s;
+  transition-timing-function: ease-in-out;
+}
+.navbar-default .navbar-brand {
+  font-size:23px;
+  font-family: 'cinzel decorative';
+  color: #437ca8;
+  transition:all 0.2s;
+  transition-timing-function: ease-in-out;
+}
+.navbar-default .navbar-brand:hover {
+  color:#e25822 !important;
+}
+body {
+  background: #466368;
+  background: linear-gradient(to right, #a1d3b0, #f6f1d3);
+  color:#fff;
+  font-family:'roboto';
+  margin-top:60px;
+}
+.text-p{
+  color: #466368;
+}
+.h4c{
+  color:#141414;
+}
+.fit{
+  width:100%;
+}
+.h4e{
+  color:#AAA;
+}
+.container-fluid {
+   padding-right: 70px;
+   padding-left: 70px;
+}
+.jumbotron {
+  height:1480px;
+  background-color: #244863;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+a{
+  color:#96e0c6 ;
+  transition:0.2s ease;
+}
+a:hover {
+    color: #c1d9ff;
+  transition:0.2s ease;
+}
+li{
+  font-size:20px;
+}
+
+.h5{
+  position:relative;
+  top:3px;
+}
+
+.h4-text {
+  color:#437ca8;
+}
+h2 {
+  font-family:roboto, sans-serif
+}
+
+.li-relative {
+  position:relative;
+  right:10px;
+  top:11px;
+  font-size:15px;
+}
+
+.navbar-2 {
+  font-family: 'cinzel decorative';
+  font-size: 17px;
+  padding-top: 17px;
+  padding-bottom:17px;
+  font-size: 15px;
+  letter-spacing: 3px;
+  background-color:#e5e5e5;
+  color:#437ca8;
+  box-shadow: 2px 0px 16px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.margin-r {
+  margin-right:50px;
+}
+.mini-img {
+  width: 35px;
+  animation: bounceIn 0.6s;
+  transform: rotate(0deg) scale(1) translateZ(0);
+  transition: all 0.4s cubic-bezier(.8,1.8,.75,.75);
+  cursor: pointer;
+}
+
+.mini-img:hover {
+  transform: rotate(10deg) scale(1.1);
+}
+@keyframes bounceIn {
+  0% {
+    opacity: 1;
+    transform: scale(.3);
+  } 
+
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  } 
+
+  70% {
+    opacity: 1;
+    transform: scale(.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
