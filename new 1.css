@@ -1,6 +1,6 @@
 @import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
 @import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700,900');
-@import url('https://fonts.googleapis.com/css?family=Merriweather');
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
 @import url('https://fonts.googleapis.com/css?family=Roboto:300');
 $red: #e74c3c;
 
@@ -138,7 +138,11 @@ body{
   box-shadow:inset 0px 22px 16px -20px rgba(0, 0, 0, 0.2),
              inset 0px -22px 16px -20px rgba(0, 0, 0, 0.2) ;
 
+}
+.navbar-header.navbar-brand.navbar-nav a {
+  color:red;
 
+}
 .blclass{
   color:#e8e8e8;
 
