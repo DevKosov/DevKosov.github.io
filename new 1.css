@@ -138,14 +138,7 @@ body{
   box-shadow:inset 0px 22px 16px -20px rgba(0, 0, 0, 0.2),
              inset 0px -22px 16px -20px rgba(0, 0, 0, 0.2) ;
 
-a{
-  color:#96e0c6 ;
-  transition:0.2s ease;
-}
-a:hover {
-    color: #c1d9ff;
-  transition:0.2s ease;
-}
+
 .blclass{
   color:#e8e8e8;
 
