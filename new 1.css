@@ -172,7 +172,7 @@ body{
   color:#96e0c6 ;
   transition:0.2s ease;
 }
-aClass:hover {
+.aClass:hover {
     color: #f6f1d3 ;
   transition:0.2s ease;
 }
