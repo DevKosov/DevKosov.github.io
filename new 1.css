@@ -10,6 +10,8 @@ $red: #e74c3c;
    @include box-sizing(border-box); 
   
 }
+
+
 body{
   width:100%;
   margin:auto;
@@ -86,10 +88,14 @@ body{
 
 
 .margin1 {
-  margin-top: 125px; 
+  margin-top: 125px;
+  margin-bottom:30px;
 }
+
 .padding1{
-	padding-top:25px;
+	padding-top:47.5px;
+}
+
 }
 .margin {
   margin-top: 40px;
@@ -100,8 +106,12 @@ body{
   background: #437ca8;
   color:#fff;
   font-family:roboto, sans-serif;
-  font-family1:the girl next door, crusive;
+  height:100%;
+  overflow:hidden;
 }
+
+
+
 
 .imgcl {
   width:350px;
@@ -144,8 +154,6 @@ body{
 
 .bcc-2 {
   background-color:#244863;
-  background1: #466368;
-  background1: linear-gradient(to right, #a1d3b0, #f6f1d3);
   color:#648880;
   padding: 20px;
   padding-bottom:30px;
@@ -187,15 +195,14 @@ a:hover{
 
 .bcc-4 {
   background-color:#244863;
-  background1: #466368;
-  background1: linear-gradient(to right, #a1d3b0, #f6f1d3);
   color:#648880;
   padding-top: 50px;
-  padding-bottom:65px;
   text-align:center;
+  height:82%;
   box-shadow:inset 0px 22px 16px -20px rgba(0, 0, 0, 0.2),
-             inset 0px -22px 16px -20px rgba(0, 0, 0, 0.2) ;
+             inset 0px -22px 16px -20px rgba(0, 0, 0, 0.2);
 }
+
 .h2-c{
   color:#4c6862;
 }
