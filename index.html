@@ -65,9 +65,9 @@
   <h2 class="blclass margin-4" id="contact">Contact Me</h2>
   <form class="cf">
   <div class="half left cf">
-    <input type="text" id="input-name" placeholder="Name">
-    <input type="email" id="input-email" placeholder="Email address">
-    <input type="text" id="input-subject" placeholder="Subject">
+    <input class="submitc" type="text" id="input-name" placeholder="Name">
+    <input class="submitc" type="email" id="input-email" placeholder="Email address">
+    <input class="submitc" type="text" id="input-subject" placeholder="Subject">
   </div>
   <div class="half right cf">
     <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
@@ -127,7 +127,7 @@ $('a[href^="#contact"]').on('click', function(event) {
 
 });
 
-	$(window).scroll(function() {
+$(window).scroll(function() {
   if ($(document).scrollTop() > 50) {
     $('.navbar').addClass('shrink');
   } else {
