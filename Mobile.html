@@ -1,0 +1,130 @@
+<html lang="en">
+<head>
+<title> Dev Kosov's Portfoilssssssssssssssso</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="Mobile.scss">
+<link  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+<link  href="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+
+<body>
+<!-- My nav -->
+<div class="topnav cinzel-decorative" id="myTopnav">
+<a href="#home">Dev Kosov</a>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+
+<!-- End of nav-->
+
+    <div class="container-fluid bcc-1 centerFlex text-center">
+	<div class="margin-1">
+  <h2 class="margin1 padding1 centerChildT" id="home">MY PERSONAL PORTFOILO</h2>
+  <img src="Photos/Eminem.png" alt="Eminem" style="display:inline" class="centerChild img-responsive imgcl img-circle margin box-shad">
+      <h2 class=" cinzel-decorativemargin-2 devks centerChildDT"><em>Dev Kosov</em></h2>
+	  </div>
+</div>
+	</div>
+	
+  <div class="container-fluid bcc-2 text-center">
+  <h2 class="blclass roboto" id="about">MY BIO</h2>
+  <p class="blclass roboto">I am 16 years old, I come from Kosovo now i live in France.<br>I am in High School now and in the future i want to study Computer Science.<br>I am passionate about programming since i was like a little kid.<br>I started <a class="aClass" href="https://www.freecodecamp.com/" target="_blank">FreeCodeCamp</a> on May and now I can make a Website.<br>My hobbies are Football and Basketball.</p>
+</div>
+	
+	
+<div class=" roboto container-fluid bcc-3 text-center">
+    <h2 class="h2-c roboto">My Recent Activities</h2>
+	  <h2 style="margin-top:10px;">My <a href="Tribute.html">Tribute Page</a></h2>
+	  <a href="Tribute.html"><img src="Photos/ThronesA.png" alt="html" class="text-center img-responsive imgcl imgcl-2"></a>
+    <h3>Started learning Bootstrap in <a href="https://www.w3schools.com/bootstrap/default.asp" target="_blank">W3schools</a></h3>
+    <img src="Photos/bootstrap.png" alt="bootstrap" class="text-center img-responsive imgcl imgcl-1">
+    <h3>Also Just started Javascript in <a href="https://www.freecodecamp.com/" target="_blank">FreeCodeCamp</a></h3>
+    <img src="Photos/js.png" class="imgcl1 img-responsive text-center" alt="JavaScript">
+    </div>
+
+
+
+<!-- Contact Me -->
+
+<div class="container-fluid bcc-4">
+  <h2 class="blclass margin-4 roboto" id="contact">Contact Me</h2>
+  <form class="cf">
+  <div class="half left cf">
+    <input class="submitc" type="text" id="input-name" placeholder="Name">
+    <input class="submitc" type="email" id="input-email" placeholder="Email address">
+    <input class="submitc" type="text" id="input-subject" placeholder="Subject">
+  </div>
+  <div class="half right cf">
+    <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
+  </div>  
+  <input type="submit" value="Submit" id="input-submit" class="submitc">
+</form>
+<h4 class="follow text-center">Follow me on </h4>
+      <a href="https://github.com/DevKosov" target="_blank"><img src="Photos/github.png" class="mini-img margin-r" id="mini-img"></a>
+</div>
+</body>
+<script>
+$('a[href^="#home"]').on('click', function(event) {
+
+    var target = $(this.getAttribute('href'));
+
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top -160
+        }, 700);
+    }
+
+});
+$('a[href^="#about"]').on('click', function(event) {
+
+    var target = $(this.getAttribute('href'));
+	
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top -40
+        }, 700);
+    }
+
+});
+$('a[href^="#contact"]').on('click', function(event) {
+
+    var target = $(this.getAttribute('href'));
+
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top -130
+        }, 700); 
+    }
+
+});
+
+$(window).scroll(function() {
+  if ($(document).scrollTop() > 50) {
+    $('.navbar').addClass('shrink');
+  } else {
+    $('.navbar').removeClass('shrink');
+  }
+});
+
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+
+</script>
+</html>

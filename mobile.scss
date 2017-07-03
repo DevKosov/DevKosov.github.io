@@ -1,0 +1,210 @@
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');/* FONTS */
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative:400');/* FONTS */
+@import url('https://fonts.googleapis.com/css?family=Merriweather');/* FONTS */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');/* FONTS */
+$red: #e74c3c;
+
+*, 
+*:before, 
+*:after {
+   @include box-sizing(border-box); /* i used this for my From contact me element */
+  
+}
+.cinzel-decorative{
+font-family:'cinzel Decorative';
+}
+.roboto{
+font-family:'roboto';
+}
+body{
+  background: linear-gradient(to right, #a1d3b0, #f6f1d3);
+  margin:auto;
+  width:100%
+  font-family: 'roboto', sans-serif;
+  color:#fff;
+}
+.topnav {
+  overflow: hidden !important;
+  background-color: #e4e4e4;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color:#e25822;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+}
+
+
+
+
+.bcc-1 {
+  background: #437ca8;
+  color:#fff;
+  font-family:'roboto', sans-serif;
+  height: 92vh;
+  width:100%;
+  overflow:auto;
+}
+
+.margin-1 {
+margin-top:50px;
+}
+@media only screen and (max-width: 480px) {}) 
+.imgcl {
+width:100px;
+height:100px;
+  transition:box-shadow 0.4s;
+  transition-timing-function: ease-in-out;
+}
+
+
+
+
+
+
+.bcc-2 {
+  background-color:#244863;
+  color:#fff;
+  padding-top: 20px;
+  padding-bottom:30px;
+  font-family:roboto, sans-serif;
+  box-shadow:inset 0px 22px 16px -20px rgba(0, 0, 0, 0.2),
+             inset 0px -22px 16px -20px rgba(0, 0, 0, 0.2) ;
+
+}
+
+.imgcl1 {
+  width:100px;
+  height:100px;
+  filter:drop-shadow( 0px 0px 10px rgba(0,0,0,0.3)); 
+  display:inline
+}
+.imgcl-1 {
+	filter:drop-shadow( 0px 0px 10px rgba(0,0,0,0.6)); 
+	display:inline
+}
+
+.imgcl-2 {
+	border-radius:10%;
+	border:none;
+	box-shadow: 0px 0px 15px 7.5px rgba(0,0,0,0.1);
+	transition: 0.4s ease;
+	display:inline
+}
+.imgcl-2:hover {
+	box-shadow: 0px 0px 15px 7.5px rgba(0,0,0,0.3);
+	transition: 0.4s ease;
+	display:inline
+}
+
+
+
+
+
+
+
+.bcc-3{
+  background: #466368;
+  background: linear-gradient(to right, #a1d3b0, #f6f1d3);
+  color:#648880;
+  padding: 20px;
+  font-family:roboto, sans-serif;
+}
+
+
+
+
+
+
+
+
+.bcc-4 {
+  background-color:#244863;
+  color:#fff;
+  padding-top: 50px;
+  text-align:center;
+  height: 92vh;
+  width:100%;
+  overflow:auto;
+  box-shadow:inset 0px 22px 16px -20px rgba(0, 0, 0, 0.2),
+             inset 0px -22px 16px -20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+
+.follow{
+padding:20px;
+}
+.mini-img {
+  width: 35px;
+  animation: bounceIn 0.6s;
+  transform: rotate(0deg) scale(1) translateZ(0);
+  transition: all 0.4s cubic-bezier(.8,1.8,.75,.75);
+  cursor: pointer;
+}
+
+.mini-img:hover {
+  transform: rotate(10deg) scale(1.1);
+}
+@keyframes bounceIn {
+  0% {
+    opacity: 1;
+    transform: scale(.3);
+  } 
+
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  } 
+
+  70% {
+    opacity: 1;
+    transform: scale(.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
