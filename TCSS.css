@@ -76,6 +76,7 @@ a{
   transition:0.2s ease;
 }
 a:hover {
+  text-decoration:none;
     color: #f6f1d3;
   transition:0.2s ease;
 }
