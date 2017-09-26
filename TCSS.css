@@ -76,8 +76,9 @@ a{
   transition:0.2s ease;
 }
 a:hover {
-  text-decoration:none;
-    color: #f6f1d3;
+  text-decoration: none;
+    color1: #f6f1d3;
+  color:#efe6b1;
   transition:0.2s ease;
 }
 li{
