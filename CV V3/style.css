@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+body {
+  padding:0;
+  margin:0;
+  font-family:'Montserrat';
+}
+.text-center{
+  text-align:center;
+}
+.bgef1{
+  background:url('cvfa.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.background{
+  /*background: linear-gradient(90deg,#777bf8,#68d4f8 200%);*/
+  background-color:rgba(255,255,255,0.3);
+  padding:20px;
+}
+
+
+/* Background infinite animation */
+
+.bgef{
+  background:#aeccef;
+  animation:background 12s infinite;
+  padding:auto;
+}
+@keyframes background{
+  0%{
+    background:#aeccef;
+  }
+  20%{
+    background:#aae2f7;
+  }
+  40%{
+    background:#aeefdd;
+  }
+  60%{
+    background:#aeefaf;
+  }
+  80%{
+    background:#a6eacf;
+  }
+  100%{
+    background:#aeccef;
+  }
+}
+@media (min-width: 768px) {
+  .bgef {
+    padding:auto;
+  }
+}
+@media (min-width: 992px) {
+  .bgef {
+    padding:auto;
+  }
+}
+@media (min-width: 1200px) {
+  .bgef {
+    padding:100px;
+  }
+}
+
+
+
+.margin{
+  margin-left:12.5%;
+}
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  border:1px solid rgba(0,0,0,0.3);
+  animation:shadow 4s;
+  animation-fill-mode:forwards;
+}
+@keyframes shadow{
+  0%{
+      -webkit-box-shadow: 0px 0px 100px 0px rgba(0,0,0,0.0); 
+  box-shadow: 0px 0px 100px 0px rgba(0,0,0,0.0);
+  }
+  100%{
+      -webkit-box-shadow: 0px 0px 100px 0px rgba(0,0,0,0.7); 
+  box-shadow: 0px 0px 100px 0px rgba(0,0,0,0.7);
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.test1 {
+  color:black;
+	background:black;
+  border:none;
+  height:1px;
+  margin-top:2px;
+  width:0;
+  margin:7px 0px 7px 0px;
+  animation: test 4s;
+  animation-fill-mode:forwards;
+}
+.test2 {
+  color:black;
+	background:black;
+  border:none;
+  height:1px;
+  margin-top:2px;
+  width:0;
+  animation: test 4s;
+  animation-fill-mode:forwards;
+}
+.test3 {
+  color:black;
+	background:black;
+  border:none;
+  height:1px;
+  margin-top:2px;
+  width:0;
+  animation: test 4s;
+  animation-fill-mode:forwards;
+}
+@keyframes test {
+  0%{
+    width:0%;
+  }
+  100%{
+    width:100%;
+  }
+}
+
+.title{
+  font-size:50px;
+}
+
+
+
+
+/* SWING ANIMATION */
+
+
+
+
+.swing-left{
+  -ms-transform: translate(170px,0px);
+  -webkit-transform: translate(170px,0px);
+  transform: translate(170px,0px);
+  animation:swingleft 1s;
+  animation-fill-mode:forwards;
+  opacity:0;
+}
+@keyframes swingleft {
+  0%{
+    -ms-transform: translate(170px,0px);
+    -webkit-transform: translate(170px,0px);
+    transform: translate(170px,0px);
+  }
+  100%{
+    -ms-transform: translate(0px,0px);
+    -webkit-transform: translate(0px,0px);
+    transform: translate(0px,0px);
+    opacity:1;
+  }
+}
+@keyframes swingleft2 {
+  0%{
+    -ms-transform: translate(170px,0px);
+    -webkit-transform: translate(170px,0px);
+    transform: translate(170px,0px);
+  }
+  25%{
+    -ms-transform: translate(170px,0px);
+    -webkit-transform: translate(170px,0px);
+    transform: translate(170px,0px);
+    opacity:0;
+  }
+  100%{
+    -ms-transform: translate(0px,0px);
+    -webkit-transform: translate(0px,0px);
+    transform: translate(0px,0px);
+    opacity:1;
+  }
+}
+.swing-left2{
+  -ms-transform: translate(170px,0px);
+  -webkit-transform: translate(170px,0px);
+  transform: translate(170px,0px);
+  animation:swingleft2 2s;
+  animation-fill-mode:forwards;
+  opacity:0;
+}
+.swing-left3{
+  -ms-transform: translate(170px,0px);
+  -webkit-transform: translate(170px,0px);
+  transform: translate(170px,0px);
+  animation:swingleft2 2.5s;
+  animation-fill-mode:forwards;
+  opacity:0;
+}
+.swing-left4{
+  -ms-transform: translate(170px,0px);
+  -webkit-transform: translate(170px,0px);
+  transform: translate(170px,0px);
+  animation:swingleft2 3s;
+  animation-fill-mode:forwards;
+  opacity:0;
+}
+.swing-left5{
+  -ms-transform: translate(170px,0px);
+  -webkit-transform: translate(170px,0px);
+  transform: translate(170px,0px);
+  animation:swingleft2 3.5s;
+  animation-fill-mode:forwards;
+  opacity:0;
+}
+
+/* SWING UP */
+@keyframes swingup {
+  0%{
+    -ms-transform: translate(0px,50px);
+    -webkit-transform: translate(0px,50px);
+    transform: translate(0px,50px);
+  }
+  25%{
+    -ms-transform: translate(0px,50px);
+    -webkit-transform: translate(0px,50px);
+    transform: translate(0px,50px);
+    opacity:0;
+  }
+  100%{
+    -ms-transform: translate(0px,0px);
+    -webkit-transform: translate(0px,0px);
+    transform: translate(0px,0px);
+    opacity:1;
+  }
+}
+.swing-up{
+  -ms-transform: translate(0px,50px);
+  -webkit-transform: translate(0px,50px);
+  transform: translate(0px,50px);
+  animation:swingup 1.5s;
+  animation-fill-mode:forwards;
+  opacity:0;
+}
+.swing-up2{
+  -ms-transform: translate(0px,50px);
+  -webkit-transform: translate(0px,50px);
+  transform: translate(0px,50px);
+  animation:swingup 2s;
+  animation-fill-mode:forwards;
+  opacity:0;
+}
+.swing-up3{
+  -ms-transform: translate(0px,50px);
+  -webkit-transform: translate(0px,50px);
+  transform: translate(0px,50px);
+  animation:swingup 2.5s;
+  animation-fill-mode:forwards;
+  opacity:0;
+}
+.swing-up4{
+  -ms-transform: translate(0px,50px);
+  -webkit-transform: translate(0px,50px);
+  transform: translate(0px,50px);
+  animation:swingup 2.8s;
+  animation-fill-mode:forwards;
+  opacity:0;
+}
+.swing-up5{
+  -ms-transform: translate(0px,50px);
+  -webkit-transform: translate(0px,50px);
+  transform: translate(0px,50px);
+  animation:swingup 3s;
+  animation-fill-mode:forwards;
+  opacity:0;
+}
+.swing-up6{
+  -ms-transform: translate(0px,50px);
+  -webkit-transform: translate(0px,50px);
+  transform: translate(0px,50px);
+  animation:swingup 3.25s;
+  animation-fill-mode:forwards;
+  opacity:0;
+}
+.swing-up7{
+  -ms-transform: translate(0px,50px);
+  -webkit-transform: translate(0px,50px);
+  transform: translate(0px,50px);
+  animation:swingup 3.5s;
+  animation-fill-mode:forwards;
+  opacity:0;
+}
+.swing-up8{
+  -ms-transform: translate(0px,50px);
+  -webkit-transform: translate(0px,50px);
+  transform: translate(0px,50px);
+  animation:swingup 3.75s;
+  animation-fill-mode:forwards;
+  opacity:0;
+}
+.swing-up9{
+  -ms-transform: translate(0px,50px);
+  -webkit-transform: translate(0px,50px);
+  transform: translate(0px,50px);
+  animation:swingup 4s;
+  animation-fill-mode:forwards;
+  opacity:0;
+}
