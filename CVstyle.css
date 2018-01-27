@@ -101,6 +101,9 @@ body {
     width: 1170px;
   }
 }
+.hr{
+  height:1px;
+}
 .test1 {
   color:black;
 	background:black;
