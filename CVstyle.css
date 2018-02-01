@@ -49,18 +49,30 @@ body {
   }
 }
 @media (min-width: 768px) {
-  .bgef {
-    padding:auto;
+  .container {
+    width: auto;
+    padding-right:0px;
+    padding-left:0px;
+    margin-right:auto;
+    margin-left:auto
   }
 }
 @media (min-width: 992px) {
-  .bgef {
-    padding:auto;
+  .container {
+    width: 970px;
+    padding-right:0px;
+    padding-left:0px;
+    margin-right:auto;
+    margin-left:auto
   }
 }
 @media (min-width: 1200px) {
-  .bgef {
-    padding:100px;
+  .container {
+    width: 1170px;
+    padding-right:0px;
+    padding-left:0px;
+    margin-right:auto;
+    margin-left:auto
   }
 }
 
